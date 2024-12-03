@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>TESTIMONIALS</h2>
+
+  <!-- Horizontal Scrollable Testimonials -->
+  <div class="testimonial-carousel" id="testimonials-section">
+
+    <button class="scroll-btn" (click)="scrollLeft()">‹</button>
+
+    <div class="testimonial-wrapper">
+      <div *ngFor="let testimonial of testimonials" class="testimonial">
+        <img [src]="testimonial.image" [alt]="'Profile picture of ' + testimonial.username" />
+        <div class="testimonial-content">
+          <p>{{ testimonial.message }}</p>
+          <p class="username">{{ testimonial.username }}</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="scroll-btn" (click)="scrollRight()">›</button>
+  </div>
+
+</div>

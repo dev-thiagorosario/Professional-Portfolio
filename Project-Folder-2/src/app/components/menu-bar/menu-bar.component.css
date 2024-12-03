@@ -1,0 +1,132 @@
+/* Navbar Container */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #000; /* Black background */
+  height: 80px; /* Fixed height for alignment */
+  font-family: 'Manrope', sans-serif; /* Font style */
+  border-bottom: 2px solid #444; /* Bottom separator line */
+}
+
+/* Logo Section */
+.logo .button {
+  background-color: transparent;
+  color: #fff; /* White text for contrast */
+  font-size: 1.5rem; /* Highlight size */
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 2px solid #fff; /* White border */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logo .button:hover {
+  background-color: #fff;
+  color: #000; /* Invert colors on hover */
+  transform: scale(1.1); /* Slight enlargement */
+}
+
+/* Navbar Items Container */
+.nav-items {
+  display: flex;
+  flex: 1; /* Occupy remaining space */
+  justify-content: space-evenly; /* Evenly distribute items */
+  align-items: center; /* Center vertically */
+  gap: 15px; /* Spacing between items */
+  border-left: 1px solid #444; /* Divider between logo and items */
+  padding-left: 15px;
+}
+
+/* Navbar Items */
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* For animations and hover effects */
+  height: 100%; /* Align to navbar height */
+}
+
+.nav-item a {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* White text */
+  font-size: 1.2rem; /* Font size */
+  font-weight: 500;
+  padding: 10px 15px; /* Box padding */
+  background: #222; /* Box background */
+  border-radius: 4px; /* Rounded corners */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Icons */
+.nav-item i {
+  margin-left: 8px; /* Space between text and icon */
+  font-size: 1.5rem; /* Icon size */
+  vertical-align: middle; /* Fine-tune alignment */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effects */
+.nav-item a:hover {
+  background-color: #444; /* Slightly lighter background */
+  color: #ddd; /* Lighter text */
+}
+
+.nav-item a:hover i {
+  transform: scale(1.2); /* Slight icon enlargement */
+  color: #ccc; /* Icon color highlight */
+}
+
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #fff; /* Underline animation */
+  transition: width 0.3s ease;
+}
+
+.nav-item a:hover::before {
+  width: 100%; /* Full underline on hover */
+}
+
+/* Dividers Between Items */
+.nav-item:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 40%; /* Adjust divider height */
+  background-color: #444; /* Divider color */
+  margin-left: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .nav-items {
+    flex-direction: column;
+    width: 100%; /* Full width for items */
+    gap: 10px;
+    padding-left: 0; /* Remove left padding */
+    border-left: none; /* Remove divider in smaller screens */
+  }
+
+  .nav-item a {
+    justify-content: flex-start;
+    padding: 10px 20px; /* Adjust padding */
+    width: 100%; /* Full-width links */
+  }
+
+  .nav-item:not(:last-child)::after {
+    display: none; /* Hide dividers on smaller screens */
+  }
+}

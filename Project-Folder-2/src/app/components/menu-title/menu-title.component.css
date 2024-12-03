@@ -1,0 +1,17 @@
+.menu_title_container{
+  color: aliceblue;
+}
+
+.menu_title_container > h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 135px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.menu_title_container > hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

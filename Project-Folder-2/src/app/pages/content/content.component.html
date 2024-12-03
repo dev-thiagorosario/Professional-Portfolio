@@ -1,0 +1,29 @@
+<div class="container__content">
+
+  <div class="content__cover">
+    <img src="{{ ContentPhoto }}" alt="Content Cover">
+  </div>
+
+  <div class="content__title">
+    <h1>{{ ContentTitle }}</h1>
+    <hr>
+  </div>
+
+  <div>
+    <h3> {{ContentSubtitle }}</h3>
+  </div>
+
+  <div class="content__description">
+    <p>{{ NewsContent }}</p>
+  </div>
+
+
+
+  <!-- Botão para voltar à home page -->
+  <div class="content__button">
+    <a class="home-button" [routerLink]="['']">Voltar para Home</a>
+
+  </div>
+
+</div>
+

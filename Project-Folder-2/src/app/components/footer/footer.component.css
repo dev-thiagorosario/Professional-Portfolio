@@ -1,0 +1,70 @@
+/* Footer Container */
+.footer {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 20px 30px;
+  text-align: center;
+  font-family: 'Manrope', sans-serif; /* Font style */
+  border-top: 2px solid #000; /* Top separator */
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Adjust links for smaller screens */
+  margin-bottom: 10px; /* Space below links */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff; /* White text */
+  background: #222; /* Box style */
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  background-color: #555555; /* Hover background */
+  color: #ddd; /* Hover text */
+}
+
+/* Social Media Icons */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px; /* Space below social icons */
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #fff; /* White icons */
+  font-size: 1.5rem; /* Icon size */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ddd; /* Highlight on hover */
+  transform: scale(1.1); /* Slight enlargement */
+}
+
+/* Footer Text */
+.footer-text {
+  font-size: 0.9rem; /* Smaller text */
+  color: #888; /* Muted color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-social {
+    gap: 10px;
+  }
+}

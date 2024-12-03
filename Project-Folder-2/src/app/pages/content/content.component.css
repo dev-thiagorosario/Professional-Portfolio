@@ -1,0 +1,100 @@
+/* Estilos gerais */
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.container__content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo da imagem de capa */
+.content__cover img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+/* Estilo do título */
+.content__title h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #ffa726;
+  margin: 0;
+}
+
+.content__title hr {
+  margin: 10px auto;
+  width: 60px;
+  border: none;
+  height: 3px;
+  background-color: #ffa726;
+}
+
+/* Estilo do subtítulo */
+.container__content h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #bdbdbd;
+  margin-bottom: 20px;
+}
+
+/* Estilo do conteúdo principal */
+.content__description {
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Botão para voltar à página inicial */
+.content__button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #ffa726;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #ff9800;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container__content {
+    padding: 15px;
+  }
+
+  .content__title h1 {
+    font-size: 1.5rem;
+  }
+
+  .content__description {
+    font-size: 0.9rem;
+  }
+
+  .home-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
