@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="header">
+      <h1>Travel Blog</h1>
+      <div class="sort">
+          <label for="sort">Sort by:</label>
+          <select id="sort">
+              <option value="newest">Newest</option>
+              <option value="oldest">Oldest</option>
+          </select>
+      </div>
+  </div>
+
+  <div class="filters">
+      <button class="active">All</button>
+      <button>Destination</button>
+      <button>Culinary</button>
+      <button>Lifestyle</button>
+      <button>Tips & Hacks</button>
+  </div>
+
+  <div class="gallery">
+      <div class="card" *ngFor="let post of posts">
+          <img [src]="post.image" [alt]="post.altText">
+          <div class="card-content">
+              <span class="category">{{ post.category }}</span>
+              <h2>{{ post.title }}</h2>
+              <p>{{ post.description }}</p>
+              <div class="author">
+                  <img [src]="post.authorImage" alt="Author's profile picture">
+                  <span>{{ post.authorName }}</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

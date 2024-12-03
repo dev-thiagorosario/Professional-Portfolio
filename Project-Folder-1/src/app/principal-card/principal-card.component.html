@@ -1,0 +1,39 @@
+<div class="container">
+  <!-- Carousel das imagens -->
+  <div class="carousel">
+    <div *ngFor="let slide of slides; let i = index" class="carousel-slide">
+      <img [src]="slide.imageUrl" [alt]="slide.altText">
+    </div>
+  </div>
+
+  <!-- Conteúdo dinâmico baseado no slide atual -->
+  <div class="content">
+    <div class="tag">
+      {{ slides[currentSlide].tag }}
+    </div>
+    <div class="title">
+      {{ slides[currentSlide].title }}
+    </div>
+    <div class="description">
+      {{ slides[currentSlide].description }}
+    </div>
+  </div>
+
+  <!-- Informações do autor -->
+  <div class="author-info">
+    <img [src]="author.image" alt="Author's profile picture" width="40" height="40">
+    <div class="author-details">
+      <div class="author-name">{{ author.name }}</div>
+      <div>{{ author.date }} • {{ author.readTime }}</div>
+    </div>
+  </div>
+
+  <!-- Dots para navegação manual entre slides -->
+  <div class="dots">
+    <div *ngFor="let slide of slides; let i = index"
+         class="dot"
+         [ngClass]="{ 'active': currentSlide === i }"
+         (click)="showSlide(i)">
+    </div>
+  </div>
+</div>

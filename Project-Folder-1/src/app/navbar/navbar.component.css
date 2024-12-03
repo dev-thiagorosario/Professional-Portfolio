@@ -1,0 +1,113 @@
+/* Estilos principais da navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: transparent; /* Fundo transparente */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Container da navbar */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  margin-right: 8px;
+}
+
+/* Links de navegação */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f0f0f0;
+}
+
+/* Ações de navegação (pesquisa, idioma, login) */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Caixa de pesquisa */
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  padding: 8px 40px 8px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+}
+
+.search-box button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Seção de idioma */
+.language {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.language i {
+  margin-right: 5px;
+}
+
+/* Botões de login e signup */
+.login {
+  color: white;
+  text-decoration: none;
+}
+
+.signup {
+  color: white;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.signup:hover {
+  background-color: #f0f0f0;
+}

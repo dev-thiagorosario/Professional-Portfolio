@@ -1,0 +1,54 @@
+/* Definindo o estilo básico da página */
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  height: 100vh; /* Faz o body ocupar toda a altura da viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container do título que ocupa 80% da largura, com 10% de margem lateral */
+.container {
+  text-align: center;
+  padding: 40px;
+  width: 90vw; /* Ocupa 90% da largura da tela */
+  margin: 0 5vw; /* 5% de margem de cada lado */
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra leve para destaque */
+  border-radius: 8px; /* Borda levemente arredondada */
+}
+
+/* Estilo do título */
+h1 {
+  font-size: 3.5rem; /* Tamanho grande para destaque */
+  font-weight: 700;  /* Negrito */
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2; /* Melhor espaçamento entre linhas */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background-color: #ffffff;
+}
+
+/* Estilo do subtítulo */
+p {
+  font-size: 1.25rem; /* Tamanho confortável para leitura */
+  font-weight: 400;   /* Peso regular */
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  h1 {
+      font-size: 2.5rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+}
